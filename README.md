@@ -44,7 +44,7 @@ This tool simulates a **Day-Ahead Energy Trading Desk** for the Greek Power Mark
 * **🔌 Live ENTSO-E Integration:** Fetches real-time actual load data via API.
 * **☀️ Open-Meteo Weather Data:** Parallel fetching of temperature data without API keys.
 * **📉 Dynamic Backtesting:** Users can select any historical date range to validate model performance instantly.
-* **🛡️ Secure Architecture:** Uses `secrets.toml` for API key management, preventing credential leaks.
+
 
 ## 🛠️ Tech Stack
 * **Core:** Python, Pandas, NumPy
