@@ -9,7 +9,7 @@
 
 ## 🚀 Live Demo
 **Click below to access the live trading dashboard:**
-### 👉 [Launch Energy Forecast App]((https://greece-energy-forecast-8ux9anfnpevhymbskvsnrr.streamlit.app/))
+ ### 👉 [Launch Energy Forecast App](https://greece-energy-forecast-8ux9anfnpevhymbskvsnrr.streamlit.app/)
 
 ---
 
