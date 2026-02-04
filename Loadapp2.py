@@ -29,21 +29,10 @@ st.set_page_config(page_title="Greece Load Forecast AI", layout="wide")
 
 SYSTEM_KEY = None
 
-try:
-    # Önce Streamlit Secrets'a bak (Hata verirse 'except'e atlar)
-    if "ENTSOE_API_KEY" in st.secrets:
-        SYSTEM_KEY = st.secrets["ENTSOE_API_KEY"]
-except FileNotFoundError:
-    pass # Secrets dosyası yoksa panik yapma
-except Exception:
-    pass # Başka bir hata olursa da geç
-
-# Secrets'ta bulamadıysa Environment'a bak
-if not SYSTEM_KEY and os.getenv("ENTSOE_API_KEY"):
+if "ENTSOE_API_KEY" in st.secrets:
+    SYSTEM_KEY = st.secrets["ENTSOE_API_KEY"]
+elif os.getenv("ENTSOE_API_KEY"):
     SYSTEM_KEY = os.getenv("ENTSOE_API_KEY")
-
-ENTSOE_ENDPOINT = "https://web-api.tp.entsoe.eu/api"
-GREECE_DOMAIN = "10YGR-HTSO-----Y"
 
 ENTSOE_ENDPOINT = "https://web-api.tp.entsoe.eu/api"
 GREECE_DOMAIN = "10YGR-HTSO-----Y"
